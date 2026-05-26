@@ -1,6 +1,6 @@
 import { createFileRoute } from "@tanstack/react-router";
 import logo from "@/assets/shrivaasa-logo.png";
-import heroTexture from "@/assets/hero-texture.jpg";
+import heroTexture from "@/assets/hero-texture.png";
 import nameplate from "@/assets/nameplate.jpg";
 
 export const Route = createFileRoute("/")({
@@ -94,7 +94,7 @@ function Index() {
             backgroundImage: `url(${heroTexture})`,
             backgroundSize: "cover",
             backgroundPosition: "center",
-            opacity: 0.55,
+            opacity: 1,
           }}
         />
         <div
