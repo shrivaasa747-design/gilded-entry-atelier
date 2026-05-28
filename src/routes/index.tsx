@@ -1,7 +1,7 @@
 import { createFileRoute } from "@tanstack/react-router";
-import logo from "@/assets/shrivaasa-logo.png";
-import heroTexture from "@/assets/hero-texture.png";
-import nameplate from "@/assets/nameplate.png";
+import logo from "@/assets/shrivaasa-logo.webp";
+import heroTexture from "@/assets/hero-texture.webp";
+import nameplate from "@/assets/nameplate.webp";
 
 export const Route = createFileRoute("/")({
   component: Index,
@@ -21,8 +21,13 @@ export const Route = createFileRoute("/")({
       },
       { property: "og:type", content: "website" },
     ],
+    links: [
+      { rel: "preload", as: "image", href: logo, fetchpriority: "high" },
+      { rel: "preload", as: "image", href: heroTexture, fetchpriority: "high" },
+    ],
   }),
 });
+
 
 const WHATSAPP = "https://wa.me/919257682549";
 
