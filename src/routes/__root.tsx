@@ -72,14 +72,18 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Lovable App" },
-      { name: "description", content: "Lovable Generated Project" },
+      { title: "Shrivaasa site" },
+      { name: "description", content: "Entrance atelier" },
       { name: "author", content: "Lovable" },
-      { property: "og:title", content: "Lovable App" },
-      { property: "og:description", content: "Lovable Generated Project" },
+      { property: "og:title", content: "Shrivaasa site" },
+      { property: "og:description", content: "Entrance atelier" },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary" },
       { name: "twitter:site", content: "@Lovable" },
+      { name: "twitter:title", content: "Shrivaasa site" },
+      { name: "twitter:description", content: "Entrance atelier" },
+      { property: "og:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/b1733cdc-33fa-40da-a36a-6d4b059290b1/id-preview-a7e72400--5818a62d-1d57-4525-93a6-5a2e4c593cf3.lovable.app-1780003485654.png" },
+      { name: "twitter:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/b1733cdc-33fa-40da-a36a-6d4b059290b1/id-preview-a7e72400--5818a62d-1d57-4525-93a6-5a2e4c593cf3.lovable.app-1780003485654.png" },
     ],
     links: [
       {
