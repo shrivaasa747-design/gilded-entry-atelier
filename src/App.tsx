@@ -1,33 +1,6 @@
-import { createFileRoute } from "@tanstack/react-router";
 import logo from "@/assets/shrivaasa-logo.webp";
 import heroTexture from "@/assets/hero-texture.webp";
 import nameplate from "@/assets/nameplate.webp";
-
-export const Route = createFileRoute("/")({
-  component: Index,
-  head: () => ({
-    meta: [
-      { title: "Shrivaasa — Bespoke Entrance Identities for Modern Luxury Homes" },
-      {
-        name: "description",
-        content:
-          "Shrivaasa is a bespoke entrance identity atelier in Bengaluru, crafting nameplates and entrance systems at the intersection of architecture, Vastu, and numerology.",
-      },
-      { property: "og:title", content: "Shrivaasa — Bespoke Entrance Identities" },
-      {
-        property: "og:description",
-        content:
-          "An atelier crafting entrance identities for modern luxury homes. By appointment only. Bengaluru.",
-      },
-      { property: "og:type", content: "website" },
-    ],
-    links: [
-      { rel: "preload", as: "image", href: logo },
-      { rel: "preload", as: "image", href: heroTexture },
-    ],
-  }),
-});
-
 
 const WHATSAPP = "https://wa.me/919257682549";
 
@@ -81,16 +54,13 @@ function StepIcon({ which }: { which: "camera" | "compass" | "tool" }) {
   );
 }
 
-function Index() {
+export default function App() {
   return (
     <main>
       {/* HERO */}
       <section
         className="relative flex min-h-screen flex-col items-center justify-center"
-        style={{
-          backgroundColor: "#0A2E22",
-          padding: "80px 48px",
-        }}
+        style={{ backgroundColor: "#0A2E22", padding: "80px 48px" }}
       >
         <div
           aria-hidden="true"
@@ -99,7 +69,6 @@ function Index() {
             backgroundImage: `url(${heroTexture})`,
             backgroundSize: "cover",
             backgroundPosition: "center",
-            opacity: 1,
           }}
         />
         <div
@@ -145,9 +114,7 @@ function Index() {
       </section>
 
       {/* PHILOSOPHY */}
-      <section
-        style={{ backgroundColor: "#0E3B2A", padding: "120px 48px" }}
-      >
+      <section style={{ backgroundColor: "#0E3B2A", padding: "120px 48px" }}>
         <div className="mx-auto w-full max-w-[600px] text-center">
           <SectionLabel>Philosophy</SectionLabel>
           <h2
@@ -178,10 +145,7 @@ function Index() {
           >
             Three Steps to Your Entrance Identity
           </h2>
-          <div
-            className="grid grid-cols-1 md:grid-cols-3"
-            style={{ rowGap: 64, columnGap: 48 }}
-          >
+          <div className="grid grid-cols-1 md:grid-cols-3" style={{ rowGap: 64, columnGap: 48 }}>
             {[
               {
                 icon: "camera" as const,
@@ -284,10 +248,11 @@ function Index() {
       </section>
 
       {/* FINAL CTA */}
-      <section
-        style={{ backgroundColor: "#0A2E22", padding: "120px 48px" }}
-      >
-        <div className="mx-auto flex w-full max-w-[480px] flex-col items-center text-center" style={{ gap: 20 }}>
+      <section style={{ backgroundColor: "#0A2E22", padding: "120px 48px" }}>
+        <div
+          className="mx-auto flex w-full max-w-[480px] flex-col items-center text-center"
+          style={{ gap: 20 }}
+        >
           <span className="gold-rule" style={{ width: 40, opacity: 0.5 }} />
           <h2
             className="heading-serif"
