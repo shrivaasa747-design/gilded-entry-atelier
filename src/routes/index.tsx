@@ -1,7 +1,7 @@
 import { createFileRoute } from "@tanstack/react-router";
 import logo from "@/assets/shrivaasa-logo.png";
 import heroTexture from "@/assets/hero-texture.png";
-import nameplate from "@/assets/nameplate.jpg";
+import nameplate from "@/assets/nameplate.png";
 
 export const Route = createFileRoute("/")({
   component: Index,
