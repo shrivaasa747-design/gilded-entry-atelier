@@ -22,8 +22,8 @@ export const Route = createFileRoute("/")({
       { property: "og:type", content: "website" },
     ],
     links: [
-      { rel: "preload", as: "image", href: logo, fetchpriority: "high" },
-      { rel: "preload", as: "image", href: heroTexture, fetchpriority: "high" },
+      { rel: "preload", as: "image", href: logo },
+      { rel: "preload", as: "image", href: heroTexture },
     ],
   }),
 });
