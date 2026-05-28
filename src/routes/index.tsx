@@ -277,8 +277,8 @@ function Index() {
             style={{ maxWidth: 860, opacity: 0.92 }}
             width={1728}
             height={1088}
-            loading="eager"
-            fetchPriority="high"
+            loading="lazy"
+            decoding="async"
           />
         </div>
       </section>
